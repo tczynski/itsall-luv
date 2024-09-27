@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <a href="index.html"></a>
+    <a href="musicplayer.html">aqui</a>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  
+  <style>
+    
+    #overlay {
+      position: fixed;
+      top: -500;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #musicModal {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    #musicModal img {
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+
+    #musicModal ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #musicModal ul li {
+      margin-bottom: 100px;
+    }
+
+    #musicModal button {
+      padding: 10px 20px;
+    }
+
+    #floatingButton {
+      position: fixed;
+      top: -200px;
+      right: 20px;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <div id="musicModal">
+      <img id="modalImage" src="/imagens/radio.jpg">
+      <ul id="musicList">
+        <li>
+          <button onclick="playMusic('music1.mp3')">Música 1</button>
+        </li>
+        <li>
+          <button onclick="playMusic('music2.mp3')">Música 2</button>
+        </li>
+        <li>
+          <button onclick="playMusic('music3.mp3')">Música 3</button>
+        </li>
+      </ul>
+      <button onclick="closeModal()">Fechar</button>
+    </div>
+  </div>
+
+  <img src="thumbnail.jpg" onclick="openModal('fullscreen.jpg')" alt="Miniatura da imagem">
+
+  <button id="floatingButton" onclick="openModal('fullscreen.jpg')">Abrir</button>
+
+  <script>
+    var audioPlayer = new Audio();
+
+    function openModal(imageSrc) {
+      var overlay = document.getElementById('overlay');
+      var modalImage = document.getElementById('modalImage');
+
+      modalImage.src = imageSrc;
+      overlay.style.display = 'flex';
+    }
+
+    function closeModal() {
+      var overlay = document.getElementById('overlay');
+      var modalImage = document.getElementById('modalImage');
+
+      modalImage.src = '';
+      overlay.style.display = 'none';
+      stopMusic();
+    }
+
+    function playMusic(musicSrc) {
+      stopMusic();
+      audioPlayer.src = musicSrc;
+      audioPlayer.play();
+    }
+
+    function stopMusic() {
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0;
+    }
+  </script>
+</body>
+</html>

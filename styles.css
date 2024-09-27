@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;  
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mensagem{
+  z-index: 999;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/imagens/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.imagem-hover:hover + .mensagem {
+  display: block;
+}
+
+
+.layer2 img { 
+  z-index: 2;
+  width: 10px;
+  height: auto;
+  position: absolute;
+  top: -8px;
+  left: -15px;
+}
+
+.layer3 { 
+  z-index: 2;
+  width: 1004px;
+  height: auto;
+  position: absolute;
+  top: 276px;
+  left: 15px;
+}
+
+.layer3 img {
+  z-index: 5;
+  width: 1555px;
+  height: auto;
+  position: absolute;
+  top: -245px; 
+  left: 15px; 
+  transform: translate(0, 0); 
+}
+
+
+.layer4,
+.layer5,
+.layer6 {
+  z-index: 5;
+}
+
+.layer4 .imagem-hover,
+.layer5 .imagem-hover,
+.layer6 .imagem-hover {
+  z-index: 6;
+  transition: all 0.5s ease;
+  width: 100px;
+  height: auto;
+  position: absolute;
+}
+
+.layer4 .imagem-hover{ 
+  cursor: pointer;
+  width: 348px;
+  height: auto;
+  top: 177px;
+  left: 420px;
+  
+  
+}
+.layer5 .imagem-hover{ 
+  cursor: pointer;
+  width: 425px;
+  height: auto;
+  top: 196px;
+  left: 843px;
+  
+}
+.layer6 .imagem-hover { 
+  cursor: pointer;
+  width: 320px;
+  height: auto;
+  
+  top: 353px;
+  left: 720px;
+  
+}
+
+.layer4 .mensagem {
+  position: fixed;
+  display: none;
+  background-color: #4d3d63;
+  padding: 5px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.layer5 .mensagem {
+  position: fixed;
+  display: none;
+  background-color: #888888;
+  padding: 5px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+.layer6 .mensagem {
+  position: fixed;
+  display: none;
+  background-color: #888888;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.layer11.mensagem{
+  position: fixed;
+  display: none;
+  background-color: #888888;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.layer7 img {
+  z-index: 5;
+  width: 1558px;
+  height: auto;
+  position: absolute;
+  top: 30px; 
+  left: 30px;
+}
+
+.layer8 {
+  z-index: 8;
+  width: 1543px;
+  height: auto;
+  position: absolute;
+  top: 25px; 
+  left: 25px;
+}
+
+.layer8 img {
+  opacity: 0.3;
+}
+
+.layer9 {
+  z-index: 9;
+  width: 1543px;
+  height: auto;
+  position: absolute;
+  top: 25px; 
+  left: 25px;
+}
+
+.layer10 .imagem-hover {
+  z-index: 10;
+  cursor: pointer;
+  width: 200px;
+  height: auto;
+  position: absolute; 
+  top: 260px; 
+  left: 150px;
+}
+.layer11 .imagem-hover {
+  z-index: 11;
+  cursor: pointer;
+  width: 170px;
+  height: auto;
+  position: absolute; 
+  top: 280px; 
+  left: 1290px;
+}
+.layer12 {
+  z-index: 13;
+  position: absolute;
+  top: 50px; 
+  left: 60px;
+}
+
+.layer13 {
+  z-index: 13;
+  position: absolute;
+  top: 50px; 
+  left: 170px;
+}
+
+.layer14 {
+  z-index: 14;
+  position: absolute;
+  top: 50px; 
+  left: 280px;
+}
+
+.button img {
+  z-index: 1200;
+  width: 100px;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box {
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  width: 200px;
+  height: auto;
+  background-color: lightgray;
+  padding: 10px;
+  display: none;
+}
+
+
+.image-button {
+  display: inline-block;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-button img {
+  width: 50%;
+  height: auto;
+}
+
+.image-button:hover {
+  background-color: #dddddd00;
+  
+}
+

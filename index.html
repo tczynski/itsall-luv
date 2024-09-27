@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>itsall@luv</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/botoes.css">
+  <link rel="stylesheet" type="text/css" href="/css/modal.css">
+  <link rel="stylesheet" type="text/css" href="/css/haha.css">
+  <!--<link rel="icon" type="image/png" href="fine-icon-7.jpg"> -->
+</head>
+
+<body>
+  <div id="background"></div>
+
+  <div class="background">
+    <img src="/img/background.png">
+  </div> 
+
+<!--layers-->
+   <div class="layer2">
+    <img src="/img/cena1.gif">
+  </div>
+
+  <div class="layer3" id="chuva">
+    <img id="chuvaE" src="/img/chuva.gif">
+  </div>
+
+  <div class="layer4">
+      <img class="imagem-hover" src="/img/JTnormal.gif" data-hover="/img/JTtalk.gif" onclick="openModal(1)" alt="link Mw" >  
+  </div>
+
+  <div class="layer5">
+      <img class="imagem-hover" src="/img/Knormal.gif" data-hover="/img/K1.gif" onclick="openModal(2)" alt="link Mw2">
+    
+  </div>
+
+  <div class="layer6">
+      <img class="imagem-hover" src="/img/Tnormal.gif" data-hover="/img/T1.gif" onclick="openModal(3)" alt="link Mw3">
+  </div>
+
+  <div class="layer7">
+    <img src="/img/parede.png" alt="GIF 6">
+  </div>
+
+  <div class="layer71">
+    <img class="imagem-hover" src="/img/berserk1.gif" data-hover="/img/berserk.gif" onclick="openModal(4)" alt="GIF 6">
+  </div>
+
+    <div class="layer9">
+      <img class="imagem-hover" src="/img/euN.gif" data-hover="/img/euT.gif" onclick="openModal(5)" alt="">
+  </div>
+  
+  <div class="layer10">
+    <img class="imagem-hover" src="/img/banner 1.gif" data-hover="img/banner 1.2.gif">
+  </div>
+
+  <div class="layer11">
+    <img class="imagem-hover" src="img/banner222.gif" data-hover= "/img/banner22.gif">
+  </div>
+
+  <div id="vidroE" class="container1">
+    <img id="imagem" src="/img/vidro.gif" alt="Imagem">
+  </div>
+<!--layers-->
+
+
+
+<!--button-->
+<div>
+  <div id="button1">
+      <a href="#" class="button1">
+        <img src="/img/botao.png" alt="Botão 1" />
+      </a>
+    </div>
+
+    <div id="button2">
+      <a href="#"  class="button2">
+        <img src="/img/botao.png" alt="Botão 2" />
+      </a>
+    </div>
+  </div>
+
+    <div id="button3">
+      <a href="#" class="button3">
+        <img src="/img/botao.png" onclick="openModal(8)" />
+      </a>
+      <div id="myModal8" class="modal">
+  <div class="modal-content">
+    <div id="content8_1">
+      <h2>just it</h2>
+      <p>forgive me, have some bugs but I'll fix everything eventually</p>
+      <div class="modal-buttons">
+        <button onclick="closeModal(8)">x</button>
+      </div>
+    </div>
+    </div>
+  </div>
+<!--button-->
+
+
+<!-- Modal1 -->
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <div id="content1_1">
+      <h2>Jon</h2>
+      <p>Stop sacrificing your pawns. </p>
+      <div class="modal-buttons">
+        <button onclick="nextContent(1, 'content1_1', 'content1_2')">--></button>
+      </div>
+    </div>
+
+    <div id="content1_2" style="display: none;">
+      <h2>Jon</h2>
+      <p>Evil As a Form of Finitude.</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(1, 'content1_2','content1_1')"> <--</button>
+        <button onclick="nextContent(1, 'content1_2','content1_3')">--></button>
+      </div>
+    </div>
+
+    <div id="content1_3" style="display: none;">
+      <h2>Jon</h2>
+      <p>"?????</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(1, 'content1_3','content1_2')"> <--</button>
+        <button onclick="closeModal(1)">x</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal1 -->
+
+<!-- Modal2 -->
+<div id="myModal2" class="modal" alt="">
+  <div class="modal-content">
+    <div id="content2_1">
+      <h2>Koji</h2>
+      <p>Did you know E3 G4 is a silly move in Chess.</p>
+      <div class="modal-buttons">
+        <button onclick="nextContent(2, 'content2_1', 'content2_2')">-></button>
+      </div>
+    </div>
+
+    <div id="content2_2" style="display: none;">
+      <h2>Koji</h2>
+      <p>Some tools have to be sacrificed just to win.</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(2, 'content2_2', 'content2_1')"> <--</button>
+        <button onclick="closeModal(2)">x</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal2 -->
+
+<!-- Modal3 -->
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <div id="content3_1">
+      <h2>Torch</h2>
+      <p>"410, 487, 659"</p>
+      <div class="modal-buttons">
+        <button onclick="nextContent(3, 'content3_1', 'content3_2')"></button>
+      </div>
+    </div>
+
+    <div id="content3_2" style="display: none;">
+      <h2>Torch</h2>
+      <p>"290, 2406, 1012"</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(3, 'content3_2', 'content3_1')"> </button>
+        <button onclick="nextContent(1, 'content3_2','content3_3')"></button>
+      </div>
+    </div>
+    <div id="content3_3" style="display: none;">
+      <h2>Torch</h2>
+      <p>"...1442..."</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(3, 'content3_3','content3_2')"></button>
+        <button onclick="closeModal(3)">x</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal4 -->
+<div id="myModal4" class="modal">
+  <div class="modal-content">
+    <div id="content4_1">
+      <h2>Berserk</h2>
+      <p>“Dreams. Each man longs to pursue his dream. Each man is tortured by this dream, but the dream gives meaning to his life. Even if the dream ruins his life, man cannot allow himself to leave it behind. In this world, is man ever able to possess anything more solid than a dream?”</p>
+      <div class="modal-buttons">
+        <button onclick="nextContent(4, 'content4_1', 'content4_2')"></button>
+      </div>
+    </div>
+
+    <div id="content4_2" style="display: none;">
+      <h2>Berserk</h2>
+      <p>It is today the virtually universal understanding that evil concerns only a moral consideration of subjects and events that have intent or purpose. People are evil insofar as they desire evil things, and things are evil only as they purposefully produce some perceived wrong in or to people. There is here no room for the ancient and still linguistically alive notion that there could be things and persons which simply are evil—ontological and objective evil—without having neither any intended goal to commit evil nor whose actions and consequences are perceived as evil by those affected by them. The notion of objective evil, of the quality of evil in being, is wholly absent from the modern mind’s consciousness. Nonetheless, the notion of objective evil is there in the everyday ways we deal with certain things. </p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(4, 'content4_2', 'content4_1')"></button>
+        <button onclick="closeModal(4)">x</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal4 -->
+
+<!-- Modal5 -->
+<div id="myModal5" class="modal">
+  <div class="modal-content">
+    <div id="content5_1">
+      <h2>Fernanda</h2>
+      <p>??????</p>
+      <div class="modal-buttons">
+        <button onclick="nextContent(5, 'content5_1', 'content5_2')"></button>
+      </div>
+    </div>
+
+    <div id="content5_2" style="display: none;">
+      <h2>Fernanda</h2>
+      <p>???????????</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(5, 'content5_2','content5_1')"></button>
+        <button onclick="nextContent(5, 'content5_2','content5_3')"></button>
+      </div>
+    </div>
+
+    <div id="content5_3" style="display: none;">
+      <h2>Fernanda</h2>
+      <p>I'm sorry but it took me longer than I expected, the musicplayer was hell and still is;</p>
+      <div class="modal-buttons">
+        <button onclick="previousContent(5, 'content5_3','content5_2')"></button>
+        <button onclick="closeModal(5)">x</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal5 -->
+
+
+<!-- music player -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <div class="wrapper">
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <div class="timer"></div>
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time"></span>
+        <span class="max-duration"></span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+
+    <div alt="aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2RyaXZlL2ZvbGRlcnMvMWMtb2s4bnNUT2VWQ01rTFZjbEtxd0FPd1Ficjd2UzlHP3VzcD1zaGFyaW5n">
+      <p>
+sex and computers.
+      </p>
+    </div>
+    
+    <div class="music-list" alt="aHR0cHM6Ly95b3V0dS5iZS9JLXlub2xDUS13RQ==">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      
+      <ul>
+        <li li-index="1">
+          <div class="row">
+            <spam>Magic</spam>
+            <p>Coldplay</p>
+          </div>
+          <span class="audio-duration">4:45</span>
+        </li>
+
+        <li li-index="2">
+          <div class="row">
+            <spam>SDP interlude</spam>
+            <p>Travis Scott</p>
+          </div>
+          <span class="audio-duration">3:34</span>
+        </li>
+
+        <li li-index="3">
+          <div class="row">
+            <spam>Objects in the Mirror</spam>
+            <p>Mac Miller</p>
+          </div>
+          <span class="audio-duration">4:19</span>
+        </li>
+
+
+        <li li-index="4">
+          <div class="row">
+            <spam>Out Like a Light 2</spam>
+            <p>The Honeysticks</p>
+          </div>
+          <span class="audio-duration">4:31</span>
+        </li>
+
+        <li li-index="5">
+          <div class="row">
+            <spam>Alright Afrodite</spam>
+            <p>Peach Pit</p>
+          </div>
+          <span class="audio-duration">3:27</span>
+        </li>
+        
+        <li li-index="6">
+          <div class="row">
+            <spam>Show me How</spam>
+            <p>Men I Trust</p>
+          </div>
+          <span class="audio-duration">3:34</span>
+        </li>
+
+        <li li-index="7">
+          <div class="row">
+            <spam>The Swan</spam>
+            <p>Saint Saens</p>
+          </div>
+          <span class="audio-duration">3:27</span>
+        </li>
+
+        <li li-index="8">
+          <div class="row">
+            <spam>let me try</spam>
+            <p>join me</p>
+          </div>
+          <span class="audio-duration">0:51</span>
+        </li>
+
+        <li li-index="9">
+          <div class="row">
+            <spam>okay then</spam>
+            <p>I'll be always here for you</p>
+          </div>
+          <span class="audio-duration">3:42</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/music-list.js"></script>
+  <script src="js/script.js"></script>
+<!-- music player -->
+
+
+<!--scripts-->
+  
+  <script src="/js/button1.js"></script>
+  <script src="/js/button2.js"></script>
+  <script src="/js/imagemhover.js"></script>
+  <script src="/js/modalS.js"></script>
+  <script src="/js/music-list.js"></script>
+  <script src="/js/script.js"></script>
+
+<!--scripts-->
+
+  <!--<div id="custom-cursor"></div>
+  <div id="custom-cursor-click"></div>-->
+
+</body>
+</html>

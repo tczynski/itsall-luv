@@ -1,0 +1,48 @@
+#button1 img {
+    z-index: 1200;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    left: 55px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  #button2 img {
+    z-index: 1200;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    left: 170px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  #button3 img {
+    z-index: 1200;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    left: 285px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+
+
+

@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.layer2, .layer3{
+  z-index: 3;
+}
+
+.layer2 img {
+  width: 1555px;
+  height: auto;
+  position: absolute;
+  top: 30px; 
+  left: 30px; 
+}
+
+.layer3 img { 
+  width: 800px;
+  height: auto;
+  position:absolute;
+  top: 100;
+  left: 00;
+}
+
+.layer3 img {
+  top: 200px;
+  left: 425px;
+}
+
+
+.layer4 .imagem-hover,
+.layer5 .imagem-hover,
+.layer6 .imagem-hover,
+.layer10 .imagem-hover,
+.layer11 .imagem-hover,
+.layer4 img,
+.layer8 img,
+.layer9 img,
+.layer10 img,
+.layer11 img,
+.layer12,
+.layer13{
+
+  width: auto;
+  position: absolute;
+}
+
+
+.layer4 .imagem-hover,
+.layer5 .imagem-hover,
+.layer6 .imagem-hover {
+  z-index: 6;
+  width: 100px;
+  height: auto;
+  position: absolute;
+}
+
+.layer4 .imagem-hover {
+  width: 260px;
+  top: 217px;
+  left: 495px;
+}
+
+.layer5 .imagem-hover {
+  cursor: pointer;
+  width: 275px;
+  top: 342px;
+  left: 940px;
+}
+
+.layer6 .imagem-hover {
+  cursor: pointer;
+  width: 260px;
+  top: 402px;
+  left: 740px;
+}
+
+.layer7 img {
+  z-index: 5;
+  width: 1558px;
+  height: auto;
+  position: absolute;
+  top: 30px; 
+  left: 30px;
+}
+
+.layer8 img {
+  opacity: 0.3;
+}
+
+.layer9 img {
+  z-index: 11;
+  width: 200px;
+  top: 240px;
+  left: 1130px;
+}
+
+.layer10 img,
+.layer11 img{
+  z-index: 5;
+  position: absolute;
+
+}
+
+.layer10 .imagem-hover {
+  z-index: 5;
+  width: 200px;
+  top: 260px;
+  left: 150px;
+  position: absolute;
+}
+
+
+.layer11 .imagem-hover {
+  z-index: 5;
+  width: 170px;
+  top: 280px;
+  left: 1290px;
+  position: absolute;
+
+}
+
+.layer12,
+.layer13,
+.layer14 {
+  z-index: 13;
+  position: absolute;
+  top: 50px;
+}
+
+.layer12 {
+  left: 60px;
+}
+
+.layer13 {
+  left: 170px;
+}
+
+.layer14 {
+  z-index: 1200;
+  width: 100px;
+  height: auto;
+  top: 150px;
+  left: 100px;
+}
+
+.layer71 img {
+  z-index: 1201;
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 714px;
+  left: 360px;
+}
+
+.message-box {
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  width: 200px;
+  height: auto;
+  background-color: lightgray;
+  padding: 10px;
+  display: none;
+}
+
+.container1 img{
+  opacity: 0.3;
+  z-index: 9;
+  position: absolute;
+  width: 782px;
+  height: auto;
+  top: 205px;
+  left: 472px;
+  pointer-events: none;
+  
+}
+
+.container:hover .overlay {
+ 
+  background-color: rgba(0, 0, 0, 0.5); /* Define a cor de fundo transparente com opacidade */
+}
+
